@@ -103,7 +103,7 @@ public:
     void deleteMiddle(int key)
     {
         Node* curr = head;
-        while (curr != nullptr && curr->next != nullptr && curr->data != key)
+        while (curr != nullptr && curr->next != nullptr && curr->next->data != key)
         {
             curr = curr->next;
         }
